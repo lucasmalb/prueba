@@ -1,7 +1,7 @@
 import { Router } from "express";
 import ProductManager from "../services/ProductManager.js";
 
-const productManager = new ProductManager("data/products.json");
+const productManager = new ProductManager("./data/products.json");
 const router = Router();
 
 //En las dos primeras rutas enviamos el objeto de productos cargado, en la tercera enviamos el objeto vacio y lo llenamos con el socket

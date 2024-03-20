@@ -7,7 +7,7 @@
   user-select: none;
 }
 body {
-  background-color: #f4f4f4 !important;
+  background-color: black !important;
 }
 .h1,
 .h2,
@@ -24,6 +24,14 @@ h6 {
   font-weight: 900 !important;
   margin: 0 !important;
 }
+
+.tit-nav{
+  color: white;
+}
+.tit-nav strong{
+  color: orangered;
+}
+
 .centrar {
   text-align: center;
 }
@@ -214,8 +222,7 @@ img {
 }
 .thumb-wrapper {
   padding: 0 0 12px 0;
-  background: #eeaeca;
-  background: radial-gradient(circle, #eeaeca 0, #94bbe9 100%);
+  background: white;
   border-radius: 10px;
   text-align: center;
   position: relative;
@@ -224,6 +231,7 @@ img {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  margin: 2px
 }
 .thumb-wrapper:hover {
   box-shadow: 2px 2px 15px #000;
@@ -246,9 +254,12 @@ p {
 }
 .container {
   max-width: 100% !important;
+  background-color: #000;
+  
 }
 .nav-link {
   margin: 0 1rem;
+  color: white;
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -257,6 +268,7 @@ p {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
+  color: orange;
 }
 @media (max-width: 767px) {
   .nav-link {
@@ -274,7 +286,9 @@ p {
 }
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: #f8f9fa !important;
+  background-color:black !important;
+  box-shadow: 5px 5px 10px orange;
+
 }
 .btn-jif:active,
 .btn-jif:focus,
@@ -453,7 +467,6 @@ form {
   white-space: nowrap;
 }
 .hero {
-  background-image: url("https://juanfreille.github.io/javascriptPreEntrega/assets/img/locales.webp");
   background-size: cover;
   height: 300px;
   display: flex;
@@ -473,12 +486,20 @@ form {
 .product {
   display: inline-block;
   margin: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid orange;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px orange;
   width: 15%;
+}
+
+a button{
+  width: 80px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
 }
 footer a {
   text-decoration: none;
@@ -487,10 +508,9 @@ footer a {
   height: 32px;
   line-height: 32px;
   text-align: center;
-  background: #314652;
+  background: black;
   color: #fff;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.4s ease-in-out;
   margin-left: 1%;
   margin-right: 1%;
@@ -509,8 +529,8 @@ footer .fa {
 }
 
 .footer_style {
-  background-color: #b0c4de;
-  border-top: 1px solid #ebebeb;
+  background-color: black;
+  box-shadow: 0px 5px 35px white;
   padding: 8px 0 8px 0;
   margin-top: auto;
   zoom: 120%;

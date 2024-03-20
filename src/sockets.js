@@ -1,7 +1,7 @@
 import ProductManager from "./services/ProductManager.js";
 
 export default (io) => {
-  const productManager = new ProductManager("/data/products.json");
+  const productManager = new ProductManager("./data/products.json");
 
   io.on("connection", handleConnection);
 
@@ -24,7 +24,7 @@ export default (io) => {
     //agrego un pequeño mod para utilizar img por defecto en caso de no tener thumbnail, despues ver si se puede mejorar
     productsList.forEach((product) => {
       if (!product.thumbnails || product.thumbnails.length === 0) {
-        product.thumbnails = ["img/noThumbnails.webp"];
+        product.thumbnails = ["img/noThumbnails.jpg"];
       }
     });
 

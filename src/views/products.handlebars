@@ -11,7 +11,7 @@
               <div class="image-container">
                 <img
                   class="card-img"
-                  src="{{this.thumbnails}}"
+                  src="{{this.thumbnail}}"
                   alt="{{this.title}}"
                 />
                 <div class="mask"></div>
@@ -25,11 +25,9 @@
                     data-price="{{this.price}}"
                     data-code="{{this.code}}"
                     data-stock="{{this.stock}}"
-                    data-thumbnails="{{this.thumbnails}}"
-                  >
+                    data-thumbnails="{{this.thumbnail}}">
                     Ver Detalles
                   </button>
-
                 </figcaption>
               </div>
             </figure>
@@ -45,8 +43,6 @@
       momento...</h1>
   {{/if}}
 </div>
-
-<!-- MODAL DETALLES -->
 <div
   class="modal fade"
   id="detallesModal"

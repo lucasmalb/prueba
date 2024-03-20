@@ -6,7 +6,7 @@ import {
 } from "../middlewares/errorHandlers.js";
 
 const router = express.Router();
-const cartManager = new CartManager("/data/carts.json");
+const cartManager = new CartManager("./data/carts.json");
 
 router.get("/", getAllCarts);
 router.get("/:cartId", getCart);

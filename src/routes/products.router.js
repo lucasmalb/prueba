@@ -9,7 +9,7 @@ import {
 } from "../middlewares/errorHandlers.js";
 
 const router = express.Router();
-const productManager = new ProductManager("/data/products.json");
+const productManager = new ProductManager("./data/products.json");
 
 router.get("/", getAllProducts);
 router.get("/:productId", getProductById);
